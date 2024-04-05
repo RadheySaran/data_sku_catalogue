@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HTTP_Vlaidate.QuerPrams">
+      <class name="MTO.MTO_Catalogue">
         <methods>
-          <include name="Test01"/>
+          <include name="create" invocation-numbers="15"/>
         </methods>
-      </class> <!-- HTTP_Vlaidate.QuerPrams -->
+      </class> <!-- MTO.MTO_Catalogue -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

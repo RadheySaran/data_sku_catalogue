@@ -63,17 +63,17 @@ public class SKU_Secndry {
 		
 //		 Uncomment the rest of the code for actual API request if needed
 
-		given().log().all().header("Content-Type", "application/json") // Adding Content-Type header
-				.header("Authorization",
-						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxlTnVtYmVyIjoiNzAwMzE0MzQ1NyIs"
-								+ "ImNvdW50cnlDb2RlIjoiKzkxIiwiZnVsbE5hbWUiOiJBVklHSE5BIiwiaWQiOjQwLCJ1c2VyVHlwZSI6IkFETUlOIiwiZW1haWwiOi"
-								+ "JhZG1pbkBhYmFpbmZvdGVjaC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI3MDAzMTQzNDU3IiwiaWF0IjoxNzA2N"
-								+ "jEwNTQwLCJleHAiOjE3MTQ0OTk5NDB9.1AKJ5Wt6f1hpFw1PMw4LxlMkT45VnaWpdQf5Gts5z9I")
-				.body(jsonData)
-		        .when()
-       		.post("https://admin-api.avighnasteel.in/api/v1/secondary-product")
-       		.then()
-				.statusCode(200).assertThat().log().all().extract().asString();
+//		given().log().all().header("Content-Type", "application/json") // Adding Content-Type header
+//				.header("Authorization",
+//						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxlTnVtYmVyIjoiNzAwMzE0MzQ1NyIs"
+//								+ "ImNvdW50cnlDb2RlIjoiKzkxIiwiZnVsbE5hbWUiOiJBVklHSE5BIiwiaWQiOjQwLCJ1c2VyVHlwZSI6IkFETUlOIiwiZW1haWwiOi"
+//								+ "JhZG1pbkBhYmFpbmZvdGVjaC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI3MDAzMTQzNDU3IiwiaWF0IjoxNzA2N"
+//								+ "jEwNTQwLCJleHAiOjE3MTQ0OTk5NDB9.1AKJ5Wt6f1hpFw1PMw4LxlMkT45VnaWpdQf5Gts5z9I")
+//				.body(jsonData)
+//		        .when()
+//       		.post("https://staging-admin-api.avighnasteel.in/api/v1/secondary-product")
+//       		.then()
+//				.statusCode(200).assertThat().log().all().extract().asString();
 
 	}
 

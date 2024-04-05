@@ -58,7 +58,7 @@ public class CAtalogue_Secndry {
 
 	@Test(dataProvider = "excelDataProvider")
 	void create(String jsonData) throws Exception {
-//		System.out.println(jsonData);
+		System.out.println(jsonData);
 
 
 		  given()
@@ -71,7 +71,7 @@ public class CAtalogue_Secndry {
 	     		+ "NzA3MjE2NzA0LCJleHAiOjE3MTUxMDYxMDR9.gmDfWg9zHygjlA52V-1P4n_j7cej0f08cj2OnefxoAM")
 	     .body(jsonData)
 	     .when()
-	     .post("https://admin-api.avighnasteel.in/api/v1/secondary-catalogue")
+	     .post("https://staging-admin-api.avighnasteel.in/api/v1/secondary-catalogue")
 	   //  .post("https://admin-api.avighnasteel.in/api/v1/secondary-catalogue")
 	   //  .post("https://admin-api.avighnasteel.in/api/v1/secondary-catalogue")
 	     .then() 	   

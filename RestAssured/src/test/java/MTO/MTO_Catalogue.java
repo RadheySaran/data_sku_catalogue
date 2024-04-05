@@ -1,4 +1,6 @@
-package Correct_Code;
+package MTO;
+
+import static io.restassured.RestAssured.given;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,9 +18,7 @@ import org.json.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.*;
-
-public class Standard_Cat {
+public class MTO_Catalogue {
 	String[] intData = { "createdBy", "updatedBy" };
 	String[] dataNotToRead = { "upcId","Brand", "Standard","Grade", "category","shape"};
 
@@ -58,7 +58,7 @@ public class Standard_Cat {
 	@Test(dataProvider = "excelDataProvider")
 	void create(String jsonData) throws Exception {
 //		System.out.println(jsonData);
-
+//
 		given().log().all().header("Content-Type", "application/json") // Adding Content-Type header
 				.header("Authorization",
 						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxl"
@@ -106,6 +106,8 @@ public class Standard_Cat {
 		jsonObject.put("name", createProductName(dataRow, columnHeaders));
 		jsonObject.put("description", createProductName(dataRow, columnHeaders));
 		jsonObject.put("catalogueType", "MAKE_TO_ORDER" );
+		jsonObject.put("category", "STANDARD" );
+
 		return jsonObject;
 	}
 
@@ -159,7 +161,7 @@ public class Standard_Cat {
 	        specificationObject.put("minimumSellingPrice", 75000);
 	        specificationObject.put("profitMargin", 0);
 	        specificationObject.put("status", "ACTIVE");
-	        
+	        specificationObject.put("minimumOrderQuantity", 10);
 	        specificationObjects.add(specificationObject);
 	    }
 	    
@@ -192,4 +194,5 @@ public class Standard_Cat {
 			return "";
 		}
 	}
+
 }
