@@ -63,21 +63,21 @@ public class Standard_Sku {
 
 //		 Uncomment the rest of the code for actual API request if needed
 
-//		given().log().all().header("Content-Type", "application/json") 
-//				.header("Authorization",
-//						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxlTnVtYmVyIjoiNz"
-//						+ "AwMzE0MzQ1NyIsImNvdW50cnlDb2RlIjoiKzkxIiwiZnVsbE5hbWUiOiJBVklHSE5B"
-//						+ "IiwiaWQiOjEsInVzZXJUeXBlIjoiQURNSU4iLCJlbWFpbCI6ImFkbWluQGFiYWluZm9"
-//						+ "0ZWNoLmNvbSIsImlzRW1haWxWZXJpZmllZCI6ZmFsc2UsInN1YiI6IjcwMDMxNDM0NTciLCJ"
-//						+ "pYXQiOjE3MDcyODE1MDEsImV4cCI6MTcxNTE3MDkwMX0.ZIgyXPhMbxesgSx0av5QbZ4q4L3E"
-//						+ "ZfLEbjllZS6SuKo")
-//				.body(jsonData)
-//		        .when()
-//		 .post("https://admin-api.avighnasteel.in/api/v1/inventory/") 
-//		 .then()
-//		 .statusCode(200)
-//		 .assertThat()
-//		 .log().all().extract().asString();
+		given().log().all().header("Content-Type", "application/json") 
+				.header("Authorization",
+						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxlTnVtYmVyIjoiNz"
+						+ "AwMzE0MzQ1NyIsImNvdW50cnlDb2RlIjoiKzkxIiwiZnVsbE5hbWUiOiJBVklHSE5B"
+						+ "IiwiaWQiOjEsInVzZXJUeXBlIjoiQURNSU4iLCJlbWFpbCI6ImFkbWluQGFiYWluZm9"
+						+ "0ZWNoLmNvbSIsImlzRW1haWxWZXJpZmllZCI6ZmFsc2UsInN1YiI6IjcwMDMxNDM0NTciLCJ"
+						+ "pYXQiOjE3MDcyODE1MDEsImV4cCI6MTcxNTE3MDkwMX0.ZIgyXPhMbxesgSx0av5QbZ4q4L3E"
+						+ "ZfLEbjllZS6SuKo")
+				.body(jsonData)
+		        .when()
+		 .post("http://localhost:4000/api/v1/inventory/") 
+		 .then()
+		 .statusCode(200)
+		 .assertThat()
+		 .log().all().extract().asString();
 
 	}
 

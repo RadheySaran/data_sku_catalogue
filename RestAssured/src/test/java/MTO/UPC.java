@@ -30,7 +30,12 @@ public class UPC {
 
 	@DataProvider(name = "excelDataProvider")
 	public Object[][] excelDataProvider() throws JSONException, Throwable {
+		
 		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_jsw.xlsx";
+//		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_new.xlsx"; //SAIL
+//		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_TATA.xlsx";
+//		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_AMNS.xlsx";
+
 		
 		FileInputStream inputStream = new FileInputStream(excelFilePath);
 
@@ -85,13 +90,13 @@ public class UPC {
 			String shape =  getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "shape"))).toString();
 			key = categoryId+brandId+gradeId+shape;
 			for (String columnHeader : columnHeaders) {
-//				if (columnHeader.startsWith("Length")) {
-//					String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Length"))).toString();
-//					if (data.endsWith(".0")) {
-//						data = data.substring(0, data.length() - 2);
-//					}
-//					key= key+data;
-//				} else 
+				if (columnHeader.startsWith("Length")) {
+					String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Length"))).toString();
+					if (data.endsWith(".0")) {
+						data = data.substring(0, data.length() - 2);
+					}
+					key= key+data;
+				} else 
 					if (columnHeader.startsWith("Width")) {
 					String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Width"))).toString();
 					if (data.endsWith(".0")) {

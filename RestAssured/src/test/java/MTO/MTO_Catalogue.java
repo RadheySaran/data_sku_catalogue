@@ -57,8 +57,8 @@ public class MTO_Catalogue {
 
 	@Test(dataProvider = "excelDataProvider")
 	void create(String jsonData) throws Exception {
-//		System.out.println(jsonData);
-//
+		System.out.println(jsonData);
+
 		given().log().all().header("Content-Type", "application/json") // Adding Content-Type header
 				.header("Authorization",
 						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxl"
@@ -152,6 +152,10 @@ public class MTO_Catalogue {
 	    List<JSONObject> specificationObjects = new ArrayList<>();
 	    
 	    String upcIdsString = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "upcId"))).toString();
+		if (upcIdsString.endsWith(".0")) {
+			upcIdsString = upcIdsString.substring(0, upcIdsString.length() - 2);
+		}
+
 	    String[] upcIds = upcIdsString.split(" , ");
 	    
 	    for (String upcId : upcIds) {
