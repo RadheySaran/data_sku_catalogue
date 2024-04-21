@@ -31,10 +31,10 @@ public class UPC {
 	@DataProvider(name = "excelDataProvider")
 	public Object[][] excelDataProvider() throws JSONException, Throwable {
 		
-		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_jsw.xlsx";
+//		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_jsw.xlsx";
 //		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_new.xlsx"; //SAIL
 //		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_TATA.xlsx";
-//		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_AMNS.xlsx";
+		String excelFilePath = "C:\\Users\\radhe\\Downloads\\upc_AMNS.xlsx";
 
 		
 		FileInputStream inputStream = new FileInputStream(excelFilePath);
@@ -151,21 +151,20 @@ public class UPC {
 	private JSONArray createDynamicProductSpecificationArray(Row dataRow, String[] columnHeaders) {
 		JSONArray productSpecificationArray = new JSONArray();
 		for (String columnHeader : columnHeaders) {
-//			if (columnHeader.startsWith("Length")) {
-//				String specificationName = "Length";
-//				String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Length"))).toString();
-//				if (data.endsWith(".0")) {
-//					data = data.substring(0, data.length() - 2);
-//				}
-//				productSpecificationArray.put(createSpecificationObject(specificationName, 1, ""));
-//			} else
-				if (columnHeader.startsWith("Width")) {
+			if (columnHeader.startsWith("Length")) {
+				String specificationName = "Length";
+				String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Length"))).toString();
+				if (data.endsWith(".0")) {
+					data = data.substring(0, data.length() - 2);
+				}
+				productSpecificationArray.put(createSpecificationObject(specificationName, 1, data));
+			} else if(columnHeader.startsWith("Width")) {
 				String specificationName = "Width";
 				String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Width"))).toString();
 				if (data.endsWith(".0")) {
 					data = data.substring(0, data.length() - 2);
 				}
-				productSpecificationArray.put(createSpecificationObject(specificationName, 1, data));
+				productSpecificationArray.put(createSpecificationObject(specificationName, 3, data));
 			} else if (columnHeader.startsWith("Thickness")) {
 				String specificationName = "Thickness";
 				String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Thickness"))).toString();
