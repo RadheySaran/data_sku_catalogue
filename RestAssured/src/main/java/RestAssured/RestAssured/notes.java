@@ -100,6 +100,63 @@ PUBLC VOID DELETE(){
 
                                                VALIDATE
                                             -------------
+ public class PaginationTest {
+ 
+    @Test
+    public void testPagination() {
+        // Send a request for the first page with 10 items
+        given()
+            .queryParam("page", 1)
+            .queryParam("pageSize", 10)
+        .when()
+            .get("/users")
+        .then()
+            .statusCode(200)
+            .body("size()", equalTo(10));
+ 
+        // Send a request for the second page with 10 items
+        given()
+            .queryParam("page", 2)
+            .queryParam("pageSize", 10)
+        .when()
+            .get("/users")
+        .then()
+            .statusCode(200)
+            .body("size()", equalTo(10));
+ 
+        // Send a request for a different page size
+        given()
+            .queryParam("page", 1)
+            .queryParam("pageSize", 20)
+        .when()
+            .get("/users")
+        .then()
+            .statusCode(200)
+            .body("size()", equalTo(20));
+ 
+        // Send a request with invalid parameters
+        given()
+            .queryParam("page", -1)
+            .queryParam("pageSize", "foo")
+        .when()
+            .get("/users")
+        .then()
+            .statusCode(400)
+            .body("message", containsString("Invalid parameters"));
+ 
+        // Verify pagination headers
+        given()
+            .queryParam("page", 1)
+            .queryParam("pageSize", 10)
+        .when()
+            .get("/users")
+        .then()
+            .statusCode(200)
+            .header("X-Total-Count", equalTo("100"))
+            .header("Link", containsString("rel=\"first\""))
+            .header("Link", containsString("rel=\"next\""))
+            .header("Link", containsString("rel=\"last\""));
+    }                                           
 
 
                                                        DAY 2
@@ -299,6 +356,45 @@ for(String k : cookies_values.keySet())
 HEADERS - VALUES NOT CHANGES COUNTINOUSELY SO WE AC VALIDARE THE VALUE OF HEADERS
 
 
+@TEST
+public void get cookies(){
+  GIVEN()
+  
+.WHEN()
+   .GET("www.google.com");
+   
+.THEN()
+    .HEADERS("")
+     .header("Content-Type", "application/json") 
+     .and()
+     .header("Content-Encoging", "eyJhbGci") 
+     .and()
+     .header("server", "gws");
+     ------------------------------------
+     
+     Get the prticular header value
+     
+     Response res = given()
+                   .when()
+                   .get("www.google.com");
+        String headerValues = res.getHeader("Content-Type");
+        syso("the value of content-type is" : +headerValue);
+        --------------------------------------------------
+        
+                  to print all headers
+       Headers myHeaders= res.getHeaders();        
+     for(Header hd : myHeaders)
+         {
+          syso(hd.getNmae()+"     "++hd.getValue());
+         }
+         ----------------------------
+   IF WE WANT TO GET A APRTICUALR DATA OF API      
+   
+   log.all();
+   log.cookies();
+   log.headers();
+   log.body();
+   
       
 
 
