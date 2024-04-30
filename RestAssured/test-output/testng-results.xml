@@ -1,112 +1,429 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="17" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-16T17:38:28 IST" name="Default suite" finished-at="2024-04-16T17:38:29 IST" duration-ms="768">
+  <suite started-at="2024-04-29T17:04:25 IST" name="Default suite" finished-at="2024-04-29T17:04:33 IST" duration-ms="8770">
     <groups>
     </groups>
-    <test started-at="2024-04-16T17:38:28 IST" name="Default test" finished-at="2024-04-16T17:38:29 IST" duration-ms="768">
-      <class name="Correct_Code.Standard_Sku">
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="6" status="PASS">
+    <test started-at="2024-04-29T17:04:25 IST" name="Default test" finished-at="2024-04-29T17:04:33 IST" duration-ms="8770">
+      <class name="Correct_Code.CAtalogue_Secndry">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:25 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:28 IST" duration-ms="2167" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":234,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"0.763","secondaryProductId":2,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-894][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:28 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:28 IST" duration-ms="351" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":236,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"2.057","secondaryProductId":3,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-910][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:28 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:28 IST" duration-ms="297" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":238,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"1.234","secondaryProductId":4,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-867][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:28 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:29 IST" duration-ms="294" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":239,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"0.591","secondaryProductId":5,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-864][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:29 IST" duration-ms="309" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":240,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"2.044","secondaryProductId":6,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-820][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:29 IST" duration-ms="304" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":241,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"1.786","secondaryProductId":7,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-780][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="4" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:29 IST" duration-ms="303" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":242,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"2.016","secondaryProductId":8,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-860][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:30 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:30 IST" duration-ms="547" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":243,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"0.636","secondaryProductId":9,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-800][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.Standard_Sku@c8c12ac]" started-at="2024-04-16T17:38:29 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-16T17:38:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:30 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:30 IST" duration-ms="260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"warehousePlacement":"left corner","netWeight":"1000","grossWeight":"1000","uom":"MT","updatedBy":2,"warehouseId":"3","createdBy":1,"upcId":244,"warehouse":"Taloja","basePrice":"75000"}]]>
+                <![CDATA[{"availableQuantity":"1.147","secondaryProductId":10,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-898][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-      </class> <!-- Correct_Code.Standard_Sku -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:30 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:31 IST" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"0.596","secondaryProductId":11,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-903][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:31 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:31 IST" duration-ms="334" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"0.922","secondaryProductId":12,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-800][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at Correct_Code.CAtalogue_Secndry.create(CAtalogue_Secndry.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:31 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:31 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.113","secondaryProductId":13,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-825][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:31 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:32 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.711","secondaryProductId":14,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-992][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:32 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:32 IST" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"11.866","secondaryProductId":15,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-850][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:32 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:32 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.93","secondaryProductId":16,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-940][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:32 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:32 IST" duration-ms="313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.723","secondaryProductId":17,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-873][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:32 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:33 IST" duration-ms="289" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.801","secondaryProductId":18,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-800][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at jdk.internal.reflect.GeneratedMethodAccessor125.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at Correct_Code.CAtalogue_Secndry.create(CAtalogue_Secndry.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:33 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:33 IST" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.214","secondaryProductId":19,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-855][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:33 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:33 IST" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"1.716","secondaryProductId":20,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-1780][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method signature="create(java.lang.String)[pri:0, instance:Correct_Code.CAtalogue_Secndry@4550bb58]" started-at="2024-04-29T17:04:33 IST" name="create" data-provider="excelDataProvider" finished-at="2024-04-29T17:04:33 IST" duration-ms="306" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"availableQuantity":"2.027","secondaryProductId":21,"application":"Ok","keywords":"Ok","termsConditions":"<p>OK<\/p><p><br><\/p>","price":{"default":"75000"},"additionalProductDetails":"<p>ok<\/p>","catalogueName":"TINPLATE SHEET [Th-0.2][W-940][TM-T-3]","minimumQuantity":"0.1","packagingType":["PLASTIC_PACKAGING"],"defectDetails":"<p>OK<\/p>","status":"ACTIVE"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at jdk.internal.reflect.GeneratedMethodAccessor125.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at Correct_Code.CAtalogue_Secndry.create(CAtalogue_Secndry.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+      </class> <!-- Correct_Code.CAtalogue_Secndry -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

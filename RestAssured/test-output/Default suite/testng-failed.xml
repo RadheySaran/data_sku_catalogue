@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Correct_Code.Standard_Sku">
+      <class name="Correct_Code.CAtalogue_Secndry">
         <methods>
-          <include name="create"/>
+          <include name="create" invocation-numbers="10 16 19"/>
         </methods>
-      </class> <!-- Correct_Code.Standard_Sku -->
+      </class> <!-- Correct_Code.CAtalogue_Secndry -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

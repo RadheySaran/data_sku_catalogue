@@ -71,9 +71,9 @@ public class CAtalogue_Secndry {
 	     		+ "NzA3MjE2NzA0LCJleHAiOjE3MTUxMDYxMDR9.gmDfWg9zHygjlA52V-1P4n_j7cej0f08cj2OnefxoAM")
 	     .body(jsonData)
 	     .when()
-	     .post("https://staging-admin-api.avighnasteel.in/api/v1/secondary-catalogue")
+	  //   .post("https://staging-admin-api.avighnasteel.in/api/v1/secondary-catalogue")
 	   //  .post("https://admin-api.avighnasteel.in/api/v1/secondary-catalogue")
-	   //  .post("https://admin-api.avighnasteel.in/api/v1/secondary-catalogue")
+	     .post("https://admin-api.avighnasteel.in/api/v1/secondary-catalogue")
 	     .then() 	   
 		  .statusCode(200)
 		  .assertThat()
@@ -116,7 +116,7 @@ public class CAtalogue_Secndry {
 		JSONArray productSpecificationArray = createDynamicProductSpecificationArray(dataRow, columnHeaders);
 
 		jsonObject.put("packagingType", productSpecificationArray);
-
+		jsonObject.put("catalogueType", "CURRENT_INVENTORY");
 		jsonObject.put("price", createPriceObject());
 		jsonObject.put("catalogueName", createProductName(dataRow, columnHeaders));
 
@@ -126,8 +126,8 @@ public class CAtalogue_Secndry {
 	private JSONArray createDynamicProductSpecificationArray(Row dataRow, String[] columnHeaders) {
 		JSONArray productSpecificationArray = new JSONArray();
 		productSpecificationArray.put("PLASTIC_PACKAGING");
-		productSpecificationArray.put("WITHOUT_PACKAGING");
-		productSpecificationArray.put("METAL_PACKAGING");
+//		productSpecificationArray.put("WITHOUT_PACKAGING");
+//		productSpecificationArray.put("METAL_PACKAGING");
 
 		return productSpecificationArray;
 	}

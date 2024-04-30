@@ -20,7 +20,7 @@ import static io.restassured.RestAssured.*;
 
 public class SKU_Secndry {
 	String[] intData = { "warehouseId", "productCategoryId", "gradeId" };
-	String[] dataNotToRead = { "THICK", "WIDTH", "LENGTH", "TEMPER", "Lot Id", "CATE", "REMARK" };
+	String[] dataNotToRead = { "THICK", "WIDTH", "LENGTH", "TEMPER","Coating Grade", "Lot Id", "CATE", "REMARK" };
 
 	List<String> intDataList = Arrays.asList(intData);
 	List<String> dataNotToReadList = Arrays.asList(dataNotToRead);
@@ -28,7 +28,7 @@ public class SKU_Secndry {
 	@DataProvider(name = "excelDataProvider")
 	public Object[][] excelDataProvider() throws IOException {
 		String excelFilePath = "C:\\Users\\radhe\\OneDrive\\Documents\\ski-01.xlsx";
-		
+
 		FileInputStream inputStream = new FileInputStream(excelFilePath);
 
 		Workbook workbook = WorkbookFactory.create(inputStream);
@@ -55,26 +55,29 @@ public class SKU_Secndry {
 		inputStream.close();
 
 		return data;
-	}
+	}	
 
 	@Test(dataProvider = "excelDataProvider")
 	void create(String jsonData) throws Exception {
 		System.out.println(jsonData);
-		
+//STAGING CODE
 //		 Uncomment the rest of the code for actual API request if needed
 
-//		given().log().all().header("Content-Type", "application/json") // Adding Content-Type header
-//				.header("Authorization",
-//						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxlTnVtYmVyIjoiNzAwMzE0MzQ1NyIs"
-//								+ "ImNvdW50cnlDb2RlIjoiKzkxIiwiZnVsbE5hbWUiOiJBVklHSE5BIiwiaWQiOjQwLCJ1c2VyVHlwZSI6IkFETUlOIiwiZW1haWwiOi"
-//								+ "JhZG1pbkBhYmFpbmZvdGVjaC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI3MDAzMTQzNDU3IiwiaWF0IjoxNzA2N"
-//								+ "jEwNTQwLCJleHAiOjE3MTQ0OTk5NDB9.1AKJ5Wt6f1hpFw1PMw4LxlMkT45VnaWpdQf5Gts5z9I")
-//				.body(jsonData)
-//		        .when()
-//       		.post("https://staging-admin-api.avighnasteel.in/api/v1/secondary-product")
-//       		.then()
-//				.statusCode(200).assertThat().log().all().extract().asString();
+		given().log().all().header("Content-Type", "application/json") // Adding Content-Type header
+				.header("Authorization",
+						"eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6dHJ1ZSwibW9iaWxlTnVtYmVyIjoiNzAwMzE0MzQ1NyIs"
+								+ "ImNvdW50cnlDb2RlIjoiKzkxIiwiZnVsbE5hbWUiOiJBVklHSE5BIiwiaWQiOjQwLCJ1c2VyVHlwZSI6IkFETUlOIiwiZW1haWwiOi"
+								+ "JhZG1pbkBhYmFpbmZvdGVjaC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI3MDAzMTQzNDU3IiwiaWF0IjoxNzA2N"
+								+ "jEwNTQwLCJleHAiOjE3MTQ0OTk5NDB9.1AKJ5Wt6f1hpFw1PMw4LxlMkT45VnaWpdQf5Gts5z9I")
+				.body(jsonData)
+		        .when()
+       		.post("https://admin-api.avighnasteel.in/api/v1/secondary-product")
+       		.then()
+				.statusCode(200).assertThat().log().all().extract().asString();
 
+
+			
+		
 	}
 
 	private JSONObject createJsonObject(Row dataRow, String[] columnHeaders) {
@@ -129,8 +132,8 @@ public class SKU_Secndry {
 				}
 				String minValue = data;
 				String maxValue = data;
-
-				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue));
+				String uom = "MM";
+				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue, uom));
 			} else if (columnHeader.startsWith("WIDTH")) {
 				String specificationName = "Width";
 				String data = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "WIDTH"))).toString();
@@ -139,31 +142,41 @@ public class SKU_Secndry {
 				}
 				String minValue = data;
 				String maxValue = data;
-
-				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue));
+				String uom = "MM";
+				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue, uom));
 			} else if (columnHeader.startsWith("THICK")) {
 				String specificationName = "Thickness";
 				String minValue = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "THICK"))).toString();
 				String maxValue = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "THICK"))).toString();
-
-				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue));
+				String uom = "MM";
+				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue, uom));
 			} else if (columnHeader.startsWith("TEMPER")) {
 				String specificationName = "Temper";
 				String minValue = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "TEMPER"))).toString();
 				String maxValue = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "TEMPER"))).toString();
+				String uom = "";
+				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue, uom));
 
-				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue));
+			} else if (columnHeader.startsWith("Coating Grade" + "")) {
+				String specificationName = "Coating Grade";
+				String minValue = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Coating Grade")))
+						.toString();
+				String maxValue = getCellValue(dataRow.getCell(getColumnIndex(columnHeaders, "Coating Grade")))
+						.toString();
+				String uom = "";
+				productSpecificationArray.put(createSpecificationObject(specificationName, minValue, maxValue, uom));
 			}
 		}
 
 		return productSpecificationArray;
 	}
 
-	private JSONObject createSpecificationObject(String name, String minValue, String maxValue) {
+	private JSONObject createSpecificationObject(String name, String minValue, String maxValue, String uom) {
 		JSONObject specificationObject = new JSONObject();
 		specificationObject.put("name", name);
 		specificationObject.put("minValue", minValue);
 		specificationObject.put("maxValue", maxValue);
+		specificationObject.put("uom", uom);
 		return specificationObject;
 	}
 

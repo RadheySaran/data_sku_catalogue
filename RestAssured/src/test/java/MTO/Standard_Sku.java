@@ -27,7 +27,7 @@ public class Standard_Sku {
 
 	@DataProvider(name = "excelDataProvider")
 	public Object[][] excelDataProvider() throws IOException {
-		String excelFilePath = "C:\\Users\\radhe\\Downloads\\standard_sheet.xlsx";
+		String excelFilePath = "C:\\Users\\radhe\\Downloads\\SKU_10.xlsx";
 
 		FileInputStream inputStream = new FileInputStream(excelFilePath);
 
@@ -73,7 +73,8 @@ public class Standard_Sku {
 //						+ "ZfLEbjllZS6SuKo")
 //				.body(jsonData)
 //		        .when()
-//		 .post("http://localhost:4000/api/v1/inventory/") 
+//		// .post("http://localhost:4000/api/v1/inventory/") 
+//		 .post("https://staging-admin-api.avighnasteel.in/api/v1/inventory/") 
 //		 .then()
 //		 .statusCode(200)
 //		 .assertThat()
